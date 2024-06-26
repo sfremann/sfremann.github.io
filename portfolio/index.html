@@ -1,2 +1,828 @@
-Portfolio 2024
-Under construction
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sarah Frémann Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon_sarah/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="topnav">
+      <ul>
+        <li><a class="active">SF</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience & Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div> 
+    <div class="navbar-brand">
+      <!-- <div class="navbar-item is-hidden-desktop">
+        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
+          <i class="fas fa-2x fa-globe"></i>
+        </a>
+      </div> -->
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <!-- <div class="navbar-item">
+          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
+            <i class="fas fa-2x fa-globe"></i>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container-header">
+        <div class="level">
+          <div class="level-item has-text-leftalign">
+            <figure class="image is-152x152">
+              <img class="img is-rounded" src="img/pfp.jpg">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-leftalign">
+          <div class="column">
+            <h1 class="title is-1">
+              Sarah Frémann
+            </h1>
+            <h2 class="subtitle is-header">
+              Developer | Programmer
+            </h2>
+            <p>
+              <a href="mailto:sarah.fremann@gmail.com" class="icon has-text-light">
+                <i class="fas fa-1x fa-envelope"></i> <strong>sarah.fremann@gmail.com</strong>
+              </a>
+              <a href="docs/resume2024.pdf" class="icon has-text-light" target="_blank">
+                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              </a>
+              <a href="https://linkedin.com/in/sarah-fremann" class="icon has-text-light" target="_blank">
+                <i class="fab fa-1x fa-linkedin-in"></i> <strong>LinkedIn</strong>
+              </a>
+              <a href="https://github.com/sfremann" class="icon has-text-light" target="_blank">
+                <i class="fab fa-1x fa-github"></i> <strong>GitHub</strong>
+              </a>
+              <a href="https://sfremann.itch.io/" class="icon has-text-light" target="_blank">
+                <i class="fab fa-1x fa-itch-io"></i> <strong>itch.io</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" id="about">
+      <h1 class="title">Hello there!</h1>
+      <hr />
+      <p style="width: 100%;">I'm a developer with a strong background in computer science and mathematics, 
+        passionate about RPGs and narrative games, as a creator and as a gamer.
+        In my free time, I like writing dark fantasy stories with unnecessarily 
+        complex characters and lore. I also like when it’s fun. Everyone needs a good laugh 
+        once in a while, even in a dark and depressing world.
+        </p>
+        <br>
+        <p style="width: 100%;">Being both an artist and a programmer with a slightly maniacal obsession for 
+          problem-solving and mathematics, I’ve always struggled to decide whether to do creative 
+          or technical work. I also just figured out I could create some nice tools to help integrate 
+          creative content into games such as animation, cinematic or VFX – anything to help fellow game 
+          developers and artists to bring high-quality games to life, with compelling and authentic storytelling.
+          </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" id="projects">
+        <h1 class="title">Projects</h1>
+        <hr/>
+        <br>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">Dialogue tree plugin for Unreal Engine</p>
+                <div class="tags">
+                  <span class="tag is-status">🚧 In progress</span>
+                </div> 
+                <p>
+                  Plugin adding a dialogue tree editor in Unreal Engine 5 for future personal game projects. 
+                  The dialogue tree asset is made of custom nodes using story flags to check or set, 
+                  text, audio, animation and camera position. The plugin also handles how dialogue is 
+                  supposed to play in-game when speaking with characters.
+                </p>
+                <br/>
+                <p><span style="font-weight: bold;">Highlights:</span></p>
+                <div class="content">
+                <ul>
+                  <li>Dialogue tree editor.</li>
+                  <li>In-game dialogue tree asset behaviour.</li>
+                  <li>Additional ProjectSettings to create, save and load custom story flags.</li>
+                </ul>
+              </div>
+                <div class="tags">
+                  <span class="tag">UE5</span>
+                  <span class="tag">Blueprint</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">Python</span>
+                </div>  
+              </div>
+              <article class="tile is-child notification">
+                  <figure class="image is-3by2">
+                    <img src="img/Thumbnails/DialogueTree.png">
+                  </figure>
+                  <!-- Button to project -->
+                  <div class="project-links">
+                    <a style="text-decoration: none;">
+                    <button class="button is-in-progress">
+                      <i class="fab fa-2x"></i> <strong style="margin-left: 0.25rem;">In Progress</strong>
+                    </button>
+                    </a>
+                  </div>
+                </article>
+              </div>             
+            </div>
+          </div>
+        </div>
+
+        <!-- VR Haptics -->
+        <br>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">VR application - Haptics</p>
+                <div class="tags">
+                  <span class="tag is-status">Released in June 2024</span>
+                  <span class="tag">Team of 2</span>
+                </div> 
+                <p>
+                  Research project on haptics and how they can improve customer experience
+                  when buying products online. An application was developed to provide an 
+                  experience for participants to try in a user study. I was the only developer 
+                  on this project at EDM (Expertise Centre for Digital Media), a research centre of 
+                  Hasselt University.
+                </p>
+                <br/>
+                <p><span style="font-weight: bold;">My Contributions:</span></p>
+                <div class="content">
+                <ul>
+                  <li>Changes in TouchDIVER Haptic Gloves API to send simple messages to glove from Unreal Engine.</li>
+                  <li>Configurable experience with different play modes (3D, VR), interactions and haptic feedback.</li>
+                  <li>Automation tool to launch the experience with specific settings, record player data and save them in a result folder.</li>
+                </ul>
+              </div>
+                <div class="tags">
+                  <span class="tag">UE5</span>
+                  <span class="tag">Blueprint</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">Python</span>
+                </div>  
+              </div>
+              <article class="tile is-child notification">
+                  <figure class="image is-3by2">
+                    <img src="img/Thumbnails/VRHaptics.jpg">
+                  </figure>
+                  <!-- Button to project -->
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/posts/mieke-haesen-business-development-manager_vandaag-in-het-belang-van-limburg-uhasselt-activity-7204760668082716672-bSLX?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;" target="_blank">
+                      <button class="button is-linkedin">
+                        <i class="fab fa-2x fa-linkedin-in"></i> <strong style="margin-left: 0.25rem;">Project Advertisement</strong>
+                      </button>
+                    </a>
+                  </div>
+                </article>
+              </div>             
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Traummacher -->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+                <div class="tile is-child notification">
+                <p class="title">Traummacher</p>
+                <div class="tags">
+                  <span class="tag is-status">Released in December 2023</span>
+                  <span class="tag">Team of 2</span>
+                </div> 
+                <p>
+                  <span style="font-style: italic;">"What happened? I can’t remember. I think I lost something… or someone."</span>
+                  <br>Play as an amnesiac character, explore their apartment to help them retrieve 
+                  their memories of loss and face grief. Your choices will influence their memories, 
+                  and their past.
+                </p>
+                <br/>
+                <p><span style="font-weight: bold;">My Contributions:</span></p>
+                <div class="content">
+                <ul>
+                  <li>Story and branching narrative.</li>
+                  <li>Environment mechanics design and development.</li>
+                  <li>Integration of all game elements.</li>
+                  <li>Art direction, VFX, light and camera effects.</li>
+                </ul>
+              </div>
+                <div class="tags">
+                  <span class="tag">Unity</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">Ink</span>
+                  <span class="tag">ShaderLab</span>
+                </div>  
+              </div>
+              <article class="tile is-child notification">
+                  <figure class="image is-3by2">
+                    <img src="img/Thumbnails/Traummacher.png">
+                    <!-- <img class="modal-trigger" data-target="project-1-modal" src="img/Thumbnails/Traummacher.png"> -->
+                  </figure>
+                  <!-- Button to project -->
+                  <div class="project-links">
+                    <a href="https://sfremann.itch.io/traummacher" style="text-decoration: none;" target="_blank">
+                      <button class="button is-itch">
+                        <i class="fab fa-2x fa-itch-io"></i> <strong style="margin-left: 0.25rem;">Game Page</strong>
+                      </button>
+                    <a href="https://github.com/sfremann/Traummacher" style="text-decoration: none;" target="_blank">
+                      <button class="button is-github">
+                        <i class="fab fa-2x fa-github"></i> <strong style="margin-left: 0.25rem;">Source Code</strong>
+                      </button>
+                    </a>
+                  </div>
+                </article>
+              </div>             
+            </div>
+          </div>
+        </div>
+        <br>
+        
+        <!-- A short story of Compiègne -->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">A short history of Compiègne’s memorial</p>
+                <div class="tags">
+                  <span class="tag is-status">Released in December 2023</span>
+                  <span class="tag">Team of 2</span>
+                </div> 
+                <p>Created as a casern, used as a military hospital, transformed into an 
+                  internment camp, Compiègne’s memorial has a vivid and complex history 
+                  which started more than a century ago. Explore different periods of time 
+                  and catch some glimpses of the memorial’s history.
+                </p>
+                <br/>
+                <p><span style="font-weight: bold;">My Contributions:</span></p>
+                <div class="content">
+                <ul>
+                  <li>Design and development of the whole experience.</li>
+                  <li>Writing and voicing all lines.</li>
+                  <li>Implementation of a "sketch" look by adapting existing shaders.</li>
+                  <li>Player interaction with the environment.</li>
+                </ul>
+              </div>
+                <div class="tags">
+                  <span class="tag">Unity</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">ShaderLab</span>
+                </div>  
+              </div>
+              <article class="tile is-child notification">
+                  <figure class="image is-3by2">
+                    <img src="img/Thumbnails/TimeTravel.png">
+                  </figure>
+                  <!-- Button to project -->
+                  <div class="project-links">
+                    <a href="https://sfremann.itch.io/a-short-history-of-compigne" style="text-decoration: none;" target="_blank">
+                      <button class="button is-itch">
+                        <i class="fab fa-2x fa-itch-io"></i> <strong style="margin-left: 0.25rem;">Game Page</strong>
+                      </button>
+                    <a href="https://github.com/sfremann/TimeTravelProject" style="text-decoration: none;" target="_blank">
+                      <button class="button is-github">
+                        <i class="fab fa-2x fa-github"></i> <strong style="margin-left: 0.25rem;">Source Code</strong>
+                      </button>
+                    </a>
+                  </div>
+              </article>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section">
+      <div class="container" id="experience">
+        <h1 class="title">Experience</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/logouhasselt.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Hasselt University - EDM (Expertise Centre for Digital Media)</p>
+              <p class="subtitle is-6">VR Developer Intern - <time datetime="2024-2">February 2024</time> - <time
+                  datetime="2024-8">August 2024</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Two research projects related to VR, one on haptics and the other on 3D reconstruction.</p>
+            <ul>
+              <li>Designed and developed a configurable experience for a research project on haptics with different play modes (3D, VR), interactions and haptic feedback.</li>
+              <li>Modified haptic gloves’ API to issue simple commands from Unreal Engine.</li>
+              <li>Wrote automation tools for a large-scale user study.</li>
+              <li>Integrated a CAD model into a realistic VR environment using shaders.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">UE5</span>
+              <span class="tag">C++</span>
+              <span class="tag">Blueprint</span>
+              <span class="tag">Python</span>
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">ShaderLab</span>
+              <span class="tag">Blender</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/Sysnav.jfif" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Sysnav</p>
+              <p class="subtitle is-6">Software Developer Intern - <time datetime="2022-8">August 2022</time> - <time
+                  datetime="2023-2">February 2023</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Design and developement of an entire pipeline to run unit tests for navigation algorithms.</p>
+            <ul>
+              <li>Implemented GitLab CI pipeline and unit tests for navigation algorithms.</li>
+              <li>Wrote Bash and Python automation tools for the development team.</li>
+              <li>Adapted and documented complex data simulation algorithm.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Jyra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Education</h1>
+      <hr/>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/logo-utc2.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">UTC - Alliance Sorbonne Université (Université de Technologie de Compiègne)</p>
+              <p class="subtitle is-6">Ingénieure en génie informatique - <time datetime="2022-2">February 2022</time> - <time datetime="2024-10">October 2024</time></p>
+            </div>
+          </div>
+          <div class="content">
+            Eq. MSc in Computer Science.
+            <ul>
+              <li>Algebra, statistics, machine learning, optimisation algorithms.</li>
+              <li>Computer vision, robotics, system programming, VR & game development.</li>
+              <li>Intellectual property rights, multimedia & interactive storytelling.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/estaca-logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">ESTACA (école supérieure des technologies aéronautiques et de construction automobile)</p>
+            <p class="subtitle is-6">Classe Prépas - <time datetime="2020-2">February 2020</time> - <time datetime="2022-1">January 2022</time></p>
+            </div>
+          </div>
+          <div class="content">
+            Eq. BSc, general course before being able to enter an engineering Master course.
+            <ul>
+              <li>Physics, mechanics, fluid mechanics, thermodynamics, electricity, CAD.</li>
+              <li>Signal processing, object oriented programming, software development, robotics.</li>
+              <li>Applied mathematics, alebra, statistics, system modelisation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/logo-ensi.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">ENSI (école des nouvelles images)</p>
+            <p class="subtitle is-6">Cinéma d'animation 3D - <time datetime="2019-9">September 2019</time> - <time datetime="2020-1">January 2020</time></p>
+            </div>
+          </div>
+          <div class="content">
+            First semester of a 5-years course on 3D animation, before moving to engineering and software development.
+            <ul>
+              <li>3D modelling & sculpting, 2D & 3D animation, lighting, texturing, rigging, rendering.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/logo/logo-atelier-sevres.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Atelier de Sèvres</p>
+              <p class="subtitle is-6">Prépa Animation - <time datetime="2018-9">September 2018</time> - <time datetime="2019-6">June 2019</time></p>
+            </div>
+          </div>
+          <div class="content">
+            1-year intensive course to prepare a computer animation portfolio before entering an animation school.
+            <ul>
+              <li>Character & environment drawing, illustration, anatomy.</li>
+              <li>Storyboard, writing, movie & photography analysis, short film making.</li>
+              <li>2D & stop-motion animation, 2D VFX, motion capture basis, sound design, compositing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section">
+    <div class="container" id="contact">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:sarah.fremann@gmail.com" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:sarah.fremann@gmail.com">sarah.fremann@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+        <a href="docs/resume2024.pdf" class="icon is-large" target="_blank">
+          <i class="fas fa-2x fa-file-word"></i> <strong>Resume</strong>
+        </a>
+        <p class="heading"><a href="docs/resume2024.pdf" target="_blank">Resume</a></p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <a href="https://fr.linkedin.com/in/sarah-fremann" class="icon is-large" target="_blank">
+            <i class="fab fa-2x fa-linkedin-in"></i>
+          </a>
+          <p class="heading"><a href="https://fr.linkedin.com/in/sarah-fremann" target="_blank">in/sarah-fremann</a></p>
+        </div>
+      </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/sfremann" class="icon is-large" target="_blank">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/sfremann" target="_blank">github.com/sfremann</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://sfremann.itch.io" class="icon is-large" target="_blank">
+              <i class="fab fa-2x fa-itch-io"></i>
+            </a>
+            <p class="heading"><a href="https://sfremann.itch.io" target="_blank">sfremann.itch.io</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  
+  <!-- ---------------- Later Modals --------------------- -->
+  <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon" style="color: darkgrey;">
+          <i class="fab fa-github"></i> Based on Template from Mark Macneil. </a>
+          <span style="color: darkgrey;">|</span>
+          <a href="https://www.artstation.com/plinkakko" target="_blank" class="icon" style="color: darkgrey;">
+            <i class="fab fa-artstation"></i> Reworked by plinkakko.</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>
