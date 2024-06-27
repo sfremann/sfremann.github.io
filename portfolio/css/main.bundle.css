@@ -334,7 +334,7 @@ fieldset[disabled] .textarea {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 25px;
 }
 
 /* Icône burger */
@@ -812,6 +812,7 @@ a.box:active {
 
 .project-links{
   display: flex; 
+  flex-wrap: wrap;
   justify-content:space-evenly; 
   align-items: top; 
   padding:1rem
@@ -829,22 +830,11 @@ a.box:active {
   white-space: nowrap
 }
 
-.button.is-github{
+.button.is-github, .button.is-itch, .button.is-linkedin{
   height: fit-content;
   display: flex;
   justify-content: space-evenly;
-}
-
-.button.is-itch{
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.button.is-linkedin{
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 .button.is-in-progress{
@@ -2495,6 +2485,7 @@ fieldset[disabled] .button {
 
 .container-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -8032,6 +8023,7 @@ label.panel-block:hover {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 2.5rem;
+  padding-right: 0.5rem;
   z-index: 0;
 }
 
