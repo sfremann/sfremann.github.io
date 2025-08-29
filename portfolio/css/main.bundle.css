@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Manrope);
 
 /*! Flickity v2.3.0
 https://flickity.metafizzy.co
@@ -142,7 +142,16 @@ https://flickity.metafizzy.co
 }
 
 .modal-trigger {
-  cursor: pointer
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #dbdbdb;
+  color: #363636;
+  border-radius: 4px;
+  padding: calc(.5em - 1px) calc(.75em - 1px);
+}
+
+.modal-trigger:hover {
+  border-color: #b5b5b5;
 }
 
 a.icon>strong {
@@ -2499,7 +2508,7 @@ fieldset[disabled] .button {
 
 @media screen and (min-width:1024px) {
   .container {
-    max-width: 960px
+    max-width: 1200px
   }
 }
 
@@ -3827,6 +3836,10 @@ a.tag:hover {
 }
 
 .subtitle:not(.is-spaced)+.title {
+  margin-top: -1.25rem
+}
+
+.subtitle:not(.is-spaced)+.subtitle {
   margin-top: -1.25rem
 }
 
@@ -9548,6 +9561,7 @@ screen and (min-width:769px) {
 .tile.is-child:last-child {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  max-width: 400px;
 }
 
 .tile.is-parent {

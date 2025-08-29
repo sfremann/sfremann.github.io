@@ -6,18 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon_sarah/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
 </head>
 
 <body>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation" id="home">
-    <div class="topnav" id="mainTopnav">
+    <div class="topnav active" id="mainTopnav">
       <a id="closeBtn" class="close">×</a>
       <ul>
         <li><a class="active" href="#home">SF</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="projects.html#projects">--- Project Gallery</a></li>
         <li><a href="#experience">Experience & Education</a></li>
+        <li><a href="experience.html#experience">--- Detailed Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div> 
@@ -53,8 +56,8 @@
               Developer | Programmer
             </h2>
             <div style="font-size: 14px; display: flex; flex-wrap: wrap; flex-direction: row; justify-items: center;">
-              <div><a href="mailto:sarah.fremann@gmail.com" class="icon has-text-light">
-                <i class="fas fa-1x fa-envelope"></i> <strong>sarah.fremann@gmail.com</strong>
+              <div><a class="icon has-text-light">
+                <i class="fas fa-1x fa-envelope"></i> <strong>sarah.fremann -at- gmail.com</strong>
               </a></div>
               <div><a href="docs/resume2024.pdf" class="icon has-text-light" target="_blank">
                 <i class="fas fa-file-word"></i> <strong>Resume</strong>
@@ -80,19 +83,21 @@
     <div class="container" id="about">
       <h1 class="title">Hello there!</h1>
       <hr />
-      <p style="width: 100%;">I'm a developer with a strong background in computer science and mathematics, 
+      <p style="margin-left: 20%; margin-right: 20%;">
+        I’m a developer with a strong background in computer science and mathematics, 
         passionate about RPGs and narrative games, as a creator and as a gamer.
         In my free time, I like writing dark fantasy stories with unnecessarily 
         complex characters and lore. I also like when it’s fun. Everyone needs a good laugh 
         once in a while, even in a dark and depressing world.
-        </p>
-        <br>
-        <p style="width: 100%;">Being both an artist and a programmer with a slightly maniacal obsession for 
-          problem-solving and mathematics, I’ve always struggled to decide whether to do creative 
-          or technical work. I also just figured out I could create some nice tools to help integrate 
-          creative content into games such as animation, cinematic or VFX – anything to help fellow game 
-          developers and artists to bring high-quality games to life, with compelling and authentic storytelling.
-          </p>
+      </p>
+      <br>
+      <p style="margin-left: 20%; margin-right: 20%;">
+        Being both an artist and a programmer with a slightly maniacal obsession for 
+        problem-solving and mathematics, I’ve always struggled to decide whether to do creative 
+        or technical work. I also just figured out I could create some nice tools to help integrate 
+        creative content into games such as animation, cinematic or VFX – anything to help fellow game 
+        developers and artists to bring high-quality games to life, with compelling and authentic storytelling.
+      </p>
       </div>
     </section>
 
@@ -100,6 +105,8 @@
       <div class="container" id="projects">
         <h1 class="title">Projects</h1>
         <hr/>
+
+        <!-- Dialogue tree -->
         <br>
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
@@ -109,6 +116,10 @@
                 <p class="title">Dialogue tree plugin for Unreal Engine</p>
                 <div class="tags">
                   <span class="tag is-status">🚧 In progress</span>
+                  <span class="tag is-status">Tool</span>
+                  <span class="tag">UE5</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">Python</span>
                 </div> 
                 <p>
                   Plugin adding a dialogue tree editor in Unreal Engine 5 for future personal game projects. 
@@ -125,12 +136,6 @@
                   <li>Additional ProjectSettings to create, save and load custom story flags.</li>
                 </ul>
               </div>
-                <div class="tags">
-                  <span class="tag">UE5</span>
-                  <span class="tag">Blueprint</span>
-                  <span class="tag">C++</span>
-                  <span class="tag">Python</span>
-                </div>  
               </div>
               <article class="tile is-child notification">
                   <figure class="image is-3by2">
@@ -160,13 +165,17 @@
                 <p class="title">VR application - Haptics</p>
                 <div class="tags">
                   <span class="tag is-status">Released in June 2024</span>
-                  <span class="tag">Team of 2</span>
+                  <span class="tag is-status">Team of 2</span>
+                  <span class="tag is-status">Application</span>
+                  <span class="tag">UE5</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">Python</span>
                 </div> 
                 <p>
                   Research project on haptics and how they can improve customer experience
                   when buying products online. An application was developed to provide an 
                   experience for participants to try in a user study. I was the only developer 
-                  on this project at EDM (Expertise Centre for Digital Media), a research centre of 
+                  on this project at the Digital Future Lab (previously EDM, Expertise Centre for Digital Media), a research centre of 
                   Hasselt University.
                 </p>
                 <br/>
@@ -178,12 +187,6 @@
                   <li>Automation tool to launch the experience with specific settings, record player data and save them in a result folder.</li>
                 </ul>
               </div>
-                <div class="tags">
-                  <span class="tag">UE5</span>
-                  <span class="tag">Blueprint</span>
-                  <span class="tag">C++</span>
-                  <span class="tag">Python</span>
-                </div>  
               </div>
               <article class="tile is-child notification">
                   <figure class="image is-3by2">
@@ -202,9 +205,9 @@
             </div>
           </div>
         </div>
-        <br>
-
+        
         <!-- Traummacher -->
+        <br>
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -213,7 +216,12 @@
                 <p class="title">Traummacher</p>
                 <div class="tags">
                   <span class="tag is-status">Released in December 2023</span>
-                  <span class="tag">Team of 2</span>
+                  <span class="tag is-status">Team of 2</span>
+                  <span class="tag is-status">Game</span>
+                  <span class="tag">Unity</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">Ink</span>
+                  <span class="tag">ShaderLab</span>
                 </div> 
                 <p>
                   <span style="font-style: italic;">"What happened? I can’t remember. I think I lost something… or someone."</span>
@@ -229,19 +237,13 @@
                   <li>Environment mechanics design and development.</li>
                   <li>Integration of all game elements.</li>
                   <li>Art direction, VFX, light and camera effects.</li>
+                  <li><span class="modal-trigger" data-target="Traummacher">+</span></li>
                 </ul>
               </div>
-                <div class="tags">
-                  <span class="tag">Unity</span>
-                  <span class="tag">C#</span>
-                  <span class="tag">Ink</span>
-                  <span class="tag">ShaderLab</span>
-                </div>  
               </div>
               <article class="tile is-child notification">
                   <figure class="image is-3by2">
                     <img src="img/Thumbnails/Traummacher.png">
-                    <!-- <img class="modal-trigger" data-target="project-1-modal" src="img/Thumbnails/Traummacher.png"> -->
                   </figure>
                   <!-- Button to project -->
                   <div class="project-links">
@@ -260,9 +262,9 @@
             </div>
           </div>
         </div>
-        <br>
         
         <!-- A short story of Compiègne -->
+        <br>
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-12">
             <div class="tile">
@@ -271,7 +273,11 @@
                 <p class="title">A short history of Compiègne’s memorial</p>
                 <div class="tags">
                   <span class="tag is-status">Released in December 2023</span>
-                  <span class="tag">Team of 2</span>
+                  <span class="tag is-status">Team of 2</span>
+                  <span class="tag is-status">Serious Game</span>
+                  <span class="tag">Unity</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">ShaderLab</span>
                 </div> 
                 <p>Created as a casern, used as a military hospital, transformed into an 
                   internment camp, Compiègne’s memorial has a vivid and complex history 
@@ -284,15 +290,11 @@
                 <ul>
                   <li>Design and development of the whole experience.</li>
                   <li>Writing and voicing all lines.</li>
-                  <li>Implementation of a "sketch" look by adapting existing shaders.</li>
+                  <li>Adaptation of existing shaders for a "sketch" look.</li>
                   <li>Player interaction with the environment.</li>
+                  <li><span class="modal-trigger" data-target="TimeTravelProject">+</span></li>
                 </ul>
-              </div>
-                <div class="tags">
-                  <span class="tag">Unity</span>
-                  <span class="tag">C#</span>
-                  <span class="tag">ShaderLab</span>
-                </div>  
+              </div> 
               </div>
               <article class="tile is-child notification">
                   <figure class="image is-3by2">
@@ -323,24 +325,29 @@
       <div class="container" id="experience">
         <h1 class="title">Experience</h1>
       <hr />
+
       <div class="card">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/logouhasselt.jpg" alt="Placeholder image">
-              </figure>
+              <a href="https://www.uhasselt.be/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/logouhasselt.jpg" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
-              <p class="title is-4">Hasselt University - EDM (Expertise Centre for Digital Media)</p>
-              <p class="subtitle is-6">VR Developer Intern - <time datetime="2024-2">February 2024</time> - <time
-                  datetime="2024-8">August 2024</time> </p>
+              <p class="title is-4">Hasselt University - Digital Future Lab</p>
+              <p class="subtitle is-5">Researcher</p>
+              <p class="subtitle is-6"><time datetime="2024-10">10/2024</time> - present</p>
             </div>
           </div>
           <div class="content">
-            <p>Two research projects related to VR, one on haptics and the other on 3D reconstruction.</p>
+            <p>Developed and presented XR demonstrators for research on entertainment and visualisation tools.</p>
+            <p>Two research projects related to VR, one on HCI with haptics and the other on 3D reconstruction.</p>
             <ul>
-              <li>Designed and developed a configurable experience for a research project on haptics with different play modes (3D, VR), interactions and haptic feedback.</li>
+              <li>Collaborated with multidisciplinary stakeholders.</li>
+              <li>Designed and developed 3D and VR demonstrators for HCI user studies.</li>
               <li>Modified haptic gloves’ API to issue simple commands from Unreal Engine.</li>
               <li>Wrote automation tools for a large-scale user study.</li>
               <li>Integrated a CAD model into a realistic VR environment using shaders.</li>
@@ -348,7 +355,44 @@
             <div class="tags">
               <span class="tag">UE5</span>
               <span class="tag">C++</span>
-              <span class="tag">Blueprint</span>
+              <span class="tag">Python</span>
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Blender</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <a href="https://www.uhasselt.be/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/logouhasselt.jpg" alt="Placeholder image">
+                </figure>
+              </a>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Hasselt University - Digital Future Lab</p>
+              <p class="subtitle is-5">VR Developer Intern</p>
+              <p class="subtitle is-6"><time datetime="2024-2">02/2024</time> - <time
+                  datetime="2024-7">07/2024</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Multidisciplinary research project on marketing and HCI. Other smaller project on 3D reconstruction and visualisation.</p>
+            <ul>
+              <li>Collaborated with multidisciplinary stakeholders.</li>
+              <li>Designed and implemented Unreal Engine demonstrators to evaluate the impact of haptic feedback and VR on consumer behaviour in online high-end product purchasing.</li>
+              <li>Modified haptic gloves’ API to issue simple commands from Unreal Engine.</li>
+              <li>Streamlined a large-scale user study (150+ participants) with Python automation tools.</li>
+              <li>Integrated a CAD model into a realistic VR environment using shaders.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">UE5</span>
+              <span class="tag">C++</span>
               <span class="tag">Python</span>
               <span class="tag">Unity</span>
               <span class="tag">C#</span>
@@ -358,25 +402,29 @@
           </div>
         </div>
       </div>
+
       <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/Sysnav.jfif" alt="Placeholder image">
-              </figure>
+              <a href="https://www.sysnav.fr/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/Sysnav.jfif" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
               <p class="title is-4">Sysnav</p>
-              <p class="subtitle is-6">Software Developer Intern - <time datetime="2022-8">August 2022</time> - <time
-                  datetime="2023-2">February 2023</time></p>
+              <p class="subtitle is-5">Software Developer Intern</p>
+              <p class="subtitle is-6"><time datetime="2022-8">08/2022</time> - <time
+                  datetime="2023-2">02/2023</time></p>
             </div>
           </div>
           <div class="content">
             <p>Design and developement of an entire pipeline to run unit tests for navigation algorithms.</p>
             <ul>
-              <li>Implemented GitLab CI pipeline and unit tests for navigation algorithms.</li>
-              <li>Wrote Bash and Python automation tools for the development team.</li>
+              <li>Improved localisation algorithm solutions with unit tests and a GitLab CI pipeline.</li>
+              <li>Increased evatuation process efficiency with Bash and Python automation tools.</li>
               <li>Adapted and documented complex data simulation algorithm.</li>
             </ul>
             <div class="tags">
@@ -385,6 +433,7 @@
               <span class="tag">Python</span>
               <span class="tag">Bash</span>
               <span class="tag">Jira</span>
+              <span class="tag">GitLab CI</span>
             </div>
           </div>
         </div>
@@ -401,17 +450,20 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/logo-utc2.png" alt="Placeholder image">
-              </figure>
+              <a href="https://www.utc.fr/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/logo-utc2.png" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
               <p class="title is-4">UTC - Alliance Sorbonne Université (Université de Technologie de Compiègne)</p>
-              <p class="subtitle is-6">Ingénieure en génie informatique - <time datetime="2022-2">February 2022</time> - <time datetime="2024-10">October 2024</time></p>
+              <p class="subtitle is-5">Ingénieure en génie informatique (Eq. MSc in Computer Science)</p>
+              <p class="subtitle is-6"><time datetime="2022-2">02/2022</time> - <time datetime="2024-10">10/2024</time></p>
             </div>
           </div>
           <div class="content">
-            Eq. MSc in Computer Science.
+            Eq. MSc in Computer Science obtained in October 2024<!-- with a GPA of 5.0 -->.
             <ul>
               <li>Algebra, statistics, machine learning, optimisation algorithms.</li>
               <li>Computer vision, robotics, system programming, VR & game development.</li>
@@ -424,13 +476,16 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/estaca-logo.png" alt="Placeholder image">
-              </figure>
+              <a href="https://www.estaca.fr/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/estaca-logo.png" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
               <p class="title is-4">ESTACA (école supérieure des technologies aéronautiques et de construction automobile)</p>
-            <p class="subtitle is-6">Classe Prépas - <time datetime="2020-2">February 2020</time> - <time datetime="2022-1">January 2022</time></p>
+              <p class="subtitle is-5">Classe Prépas (Eq. BSc)</p>
+            <p class="subtitle is-6"><time datetime="2020-2">02/2020</time> - <time datetime="2022-1">01/2022</time></p>
             </div>
           </div>
           <div class="content">
@@ -447,13 +502,16 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/logo-ensi.png" alt="Placeholder image">
-              </figure>
+              <a href="https://www.nouvellesimages.xyz/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/logo-ensi.png" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
               <p class="title is-4">ENSI (école des nouvelles images)</p>
-            <p class="subtitle is-6">Cinéma d'animation 3D - <time datetime="2019-9">September 2019</time> - <time datetime="2020-1">January 2020</time></p>
+              <p class="subtitle is-5">Cinéma d’animation 3D </p>
+            <p class="subtitle is-6"><time datetime="2019-9">09/2019</time> - <time datetime="2020-1">01/2020</time></p>
             </div>
           </div>
           <div class="content">
@@ -468,13 +526,16 @@
         <div class="card-content">
           <div class="media">
             <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/logo/logo-atelier-sevres.png" alt="Placeholder image">
-              </figure>
+              <a href="https://www.atelierdesevres.com/" style="text-decoration: none;" target="_blank">
+                <figure class="image is-48x48">
+                  <img src="img/logo/logo-atelier-sevres.png" alt="Placeholder image">
+                </figure>
+              </a>
             </div>
             <div class="media-content">
               <p class="title is-4">Atelier de Sèvres</p>
-              <p class="subtitle is-6">Prépa Animation - <time datetime="2018-9">September 2018</time> - <time datetime="2019-6">June 2019</time></p>
+              <p class="subtitle is-5">Prépa Animation</p>
+              <p class="subtitle is-6"><time datetime="2018-9">09/2018</time> - <time datetime="2019-6">06/2019</time></p>
             </div>
           </div>
           <div class="content">
@@ -490,6 +551,97 @@
     </div>
   </section>
 
+  <!-- ---------------- Later Modals --------------------- -->
+  <div id="Traummacher" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Traummacher</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+
+          <span style="font-weight: bold;">Trailer</span>
+          <div style="text-align: center;">
+            <iframe width="420" height="236" src="https://www.youtube.com/embed/LHDqIj5OdWc" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="project-links">
+            <a href="https://sfremann.itch.io/traummacher" style="text-decoration: none;" target="_blank">
+              <button class="button is-itch">
+                <i class="fab fa-2x fa-itch-io"></i> <strong style="margin-left: 0.25rem;">Game Page</strong>
+              </button>
+            <a href="https://github.com/sfremann/Traummacher" style="text-decoration: none;" target="_blank">
+              <button class="button is-github">
+                <i class="fab fa-2x fa-github"></i> <strong style="margin-left: 0.25rem;">Source Code</strong>
+              </button>
+            </a>
+          </div>
+          
+          <span style="font-weight: bold;">Contribution details</span>
+          <ul>
+            <li> Co-designed the game in all aspects: scenario, gameplay, level design, branching narrative. I also co-wrote the technical documentation for the project.</li>
+            <li>Implemented the environment’s main mechanics such as interactive objects, transitions between rooms, unlocking next rooms and locking previous rooms, enabling and disabling objects depending on the story’s progression.</li>
+            <li>Designed and implemented a modular architecture for the project using Unity’s prefab system to make most functionalities easy to reuse. I also separated the project into rooms, each being activated only when the player is allowed to be inside.</li>
+            <li>Wrote teleportation scripts to move the player from a room to a dream setting and back.</li>
+            <li>I was in charge of most of the integration process, meaning I set the right scripts on the right game elements and set those elements at their rightful place in the game. I also made sure everything worked as intended, which usually involved debugging and communicating with my partner.</li>
+            <li>Handled all the visual aspects of the game: gathering and integrating 3D models, setting up light and colour mood for every room, writing coroutines for visual transitions and camera effects, implementing VFX and particle systems.</li>
+            <li>Integrated audio assets and tweaked settings to have specific sound effects.</li>
+            <li>Worked on sharing most of this project’s content to the Traumer VR project, making sure they would update for both projects without causing any issue as both projects were developed in parallel.</li>
+            <li>Packaged and built the project to have a Unity package, a 3D Windows build and a VR Windows build.</li>
+          </ul>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot"></footer>
+    </div>
+  </div>
+
+  <div id="TimeTravelProject" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">A short history of Compiègne’s memorial</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+
+          <div class="project-links">
+            <a href="https://sfremann.itch.io/a-short-history-of-compigne" style="text-decoration: none;" target="_blank">
+              <button class="button is-itch">
+                <i class="fab fa-2x fa-itch-io"></i> <strong style="margin-left: 0.25rem;">Game Page</strong>
+              </button>
+            <a href="https://github.com/sfremann/TimeTravelProject" style="text-decoration: none;" target="_blank">
+              <button class="button is-github">
+                <i class="fab fa-2x fa-github"></i> <strong style="margin-left: 0.25rem;">Source Code</strong>
+              </button>
+            </a>
+          </div>
+          
+          <span style="font-weight: bold;">Contribution details</span>
+          <ul>
+            <li>Contributed to researching historical information and co-designed the experience based on what we found.</li>
+            <li>Wrote and voiced all the narrator lines. I also wrote technical documentation associated with the project.</li>
+            <li>Implemented all gameplay elements and environment mechanics: player movement, collision-based interaction, information zones, transitions between periods.</li>
+            <li>Designed a modular architecture for the project where each period follows the same pattern, making it easier to add other periods to the list.</li>
+            <li>I was in charge of most of the integration process, meaning I set the right scripts on the right game elements and set those elements at their rightful place in the game. I also made sure everything worked as intended, which usually involved debugging and communicating with my partner.</li>
+            <li>Handled all VFX and camera effects, mostly through coroutines. I also adapted an existing shader to give a “sketch” look to our visuals. I created a script controlling the behaviour of this adapted shader at runtime.</li>
+            <li>Searched for sound samples and integrated them in some areas to help with immersion. I also implemented some sound effects to notify transitions between periods.</li>
+            <li>Integrated the narrator voice lines in the proper information zones.</li>
+            <li>Worked on an adaptation in XR using Oculus Meta Quest 3 to try the experience in situ in a dedicated room at the memorial. I made sure most content could translate easily between 3D and XR play modes with as little modification required as possible, mainly selecting a player controller.</li>
+            <li>Packaged and built the project to have a Unity package, a 3D Windows build, a 3D OpenGL build and an XR Android build.</li>
+          </ul>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot"></footer>
+    </div>
+  </div>
+
   <!-- Contacts -->
   <section class="section">
     <div class="container" id="contact">
@@ -498,10 +650,10 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="mailto:sarah.fremann@gmail.com" class="icon is-large">
+            <a class="icon is-large">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
-            <p class="heading"><a href="mailto:sarah.fremann@gmail.com">sarah.fremann@gmail.com</a></p>
+            <p class="heading"><a>sarah.fremann -at- gmail.com</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
@@ -545,10 +697,13 @@
     <div class="content has-text-centered">
       <p>
         <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon" style="color: darkgrey; font-size: 12px;">
-          <i class="fab fa-github"></i> Based on Template from Mark Macneil. </a>
-          <span style="color: darkgrey;">|</span>
-          <a href="https://www.artstation.com/plinkakko" target="_blank" class="icon" style="color: darkgrey; font-size: 12px;">
-            <i class="fab fa-artstation"></i> Reworked by plinkakko.</a>
+          <i class="fab fa-github"></i> Based on Template from Mark Macneil.
+        </a>
+        <span style="color: darkgrey;">|</span>
+        <a href="https://www.artstation.com/plinkakko" target="_blank" class="icon" style="color: darkgrey; font-size: 12px;">
+          <i class="fab fa-artstation"></i> Reworked by plinkakko.
+        </a>
+        <p style="color: darkgrey; font-size: 12px;">© 2025</p>
       </p>
     </div>
   </footer>
