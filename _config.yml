@@ -1,6 +1,6 @@
 # Shared info
 title: Sarah Frémann Portfolio
-baseurl: /portfolio
+baseurl: 
 favicon: /assets/images/favicon/favicon.ico
 author:
   name: Sarah Frémann
@@ -60,3 +60,4 @@ exclude:
   - "README.md"
   - "Gemfile"
   - "Gemfile.lock"
+  - "LICENSE"
