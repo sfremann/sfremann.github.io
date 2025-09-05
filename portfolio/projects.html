@@ -107,45 +107,26 @@
         </div>
     </div>
 </section>
-    <!-- Main page -->
-<section class="section" id="about">
-  <div class="container">
-    <h1 class="title">About</h1>
-    <hr />
-    <div class="card">
-      <div class="card-content">
-        <br>
-        
-        <div style="margin-left: 20%; margin-right: 20%;">
-          <p><h1 id="hello-there">Hello there!</h1>
-
-<p>I’m a developer with a strong background in computer science and mathematics, 
-passionate about RPGs and narrative games, as a creator and as a gamer.
-In my free time, I like writing dark fantasy stories with unnecessarily 
-complex characters and lore. I also like when it’s fun. Everyone needs a good laugh 
-once in a while, even in a dark and depressing world.</p>
-
-<p><br /></p>
-
-<p>Being both an artist and a programmer with a slightly maniacal obsession for 
-problem-solving and mathematics, I’ve always struggled to decide whether to do creative 
-or technical work. I also just figured out I could create some nice tools to help integrate 
-creative content into games such as animation, cinematic or VFX – anything to help fellow game 
-developers and artists to bring high-quality games to life, with compelling and authentic storytelling.</p>
-
-</p>
-        </div>
-        <br>
-        
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section" id="projects">
-    <div class="container">
-        <h1 class="title">Projects Highlights</h1>
-        <h2 class="subtitle">-> <a href="/projects.html#projectGallery">Gallery</a> for more</h2>
+    <!-- Project gallery -->
+<section class="section" id="projectGallery">
+    <div class="container project-gallery">
+        <h1 class="title">Project Gallery</h1>
         <hr/>
+
+        <!-- Search bar -->
+        <div class="container">
+            <div class="field has-addons">
+            <div class="control is-expanded">
+                <input class="input" type="text" id="searchBar" placeholder="Search Projects..." onkeyup="searchProjects()">
+            </div>
+            <br>
+            </div>
+            <div class="field">
+            <input class="input" type="text" id="tagSearchBar" placeholder="Filter by Tags..." onkeyup="filterByTags()">
+            </div>
+        </div>
+
+        <!-- Gallery -->
         
         
         <div class="card">
@@ -309,6 +290,118 @@ Researchers at Hasselt University focused on developing new tools for creating a
                             <a href="https://www.upf.edu/web/max-r/" style="text-decoration: none;" target="_blank">
                                 <button class="button is-globe">
                                     <i class="fa fa-2x fa-globe"></i> <strong style="margin-right: 0.25rem;">Project Page</strong>
+                                </button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <div class="media responsive-media">
+                    <div class="media-content">
+                        <p><h1 id="vr-haptics-research-project">VR Haptics (Research Project)</h1>
+
+<h3 id="022024---062024">02/2024 - 06/2024</h3>
+
+<p>Research project with the Digital Future Lab (previously EDM, Expertise Centre for Digital Media), a research centre of Hasselt University. 
+Unreal Engine demonstrators used in a large-scale user study (150+ participants) evaluate the impact of haptic feedback and VR on consumer behaviour in online high-end product purchasing.</p>
+
+<ul>
+  <li>Designed and implemented Unreal Engine demonstrators while communicating with multidisciplinary stakeholders.</li>
+  <li>Modified TouchDIVER Haptic Gloves API to issue simple commands from Unreal Engine.</li>
+  <li>Streamlined the user study with Python automation tools.</li>
+</ul>
+</p>
+                        <div class="tags">
+                            
+                            <span class="tag is-status">Final in 2023</span>
+                            
+                            <span class="tag is-status">VR Application</span>
+                            
+                            <span class="tag is-status">Team of 2</span>
+                            
+                            <span class="tag">UE5</span>
+                            
+                            <span class="tag">C++</span>
+                            
+                            <span class="tag">Python</span>
+                            
+                        </div>
+                        <br>
+                    </div>
+                    <div class="media-right is-width-caped">
+                        <figure class="image is-3by2">
+                            <img src="/assets/images/thumbnails/vr-haptics.jpg">
+                        </figure>
+                        <br>
+                        <div class="project-links" style="text-align: center;">
+                            
+                            <a href="https://www.linkedin.com/posts/mieke-haesen-business-development-manager_vandaag-in-het-belang-van-limburg-uhasselt-activity-7204760668082716672-bSLX" style="text-decoration: none;" target="_blank">
+                                <button class="button is-linkedin">
+                                    <i class="fab fa-2x fa-linkedin-in"></i> <strong style="margin-right: 0.25rem;">Project Advertisement</strong>
+                                </button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <div class="media responsive-media">
+                    <div class="media-content">
+                        <p><h1 id="a-short-history-of-compiègnes-memorial">A Short History of Compiègne’s Memorial</h1>
+
+<h3 id="092023---012024">09/2023 - 01/2024</h3>
+
+<p>Created as a casern, used as a military hospital, transformed into an internment camp, Compiègne’s memorial has a vivid and complex history which started more than a century ago. 
+Explore different periods of time and catch some glimpses of the memorial’s history.</p>
+
+<ul>
+  <li>Designed a narrative experience for the memorial.</li>
+  <li>Wrote and voiced all the narrator lines.</li>
+  <li>Implemented and integrated all functionalities, including player interaction and movement, environment mechanics, shaders, VFX and camera effects.</li>
+</ul>
+</p>
+                        <div class="tags">
+                            
+                            <span class="tag is-status">Released in 2023</span>
+                            
+                            <span class="tag is-status">Serious Game</span>
+                            
+                            <span class="tag is-status">Team of 2</span>
+                            
+                            <span class="tag">Unity</span>
+                            
+                            <span class="tag">C#</span>
+                            
+                            <span class="tag">ShaderLab</span>
+                            
+                        </div>
+                        <br>
+                    </div>
+                    <div class="media-right is-width-caped">
+                        <figure class="image is-3by2">
+                            <img src="/assets/images/thumbnails/time-travel.png">
+                        </figure>
+                        <br>
+                        <div class="project-links" style="text-align: center;">
+                            
+                            <a href="https://sfremann.itch.io/a-short-history-of-compigne" style="text-decoration: none;" target="_blank">
+                                <button class="button is-itch">
+                                    <i class="fab fa-2x fa-itch-io"></i> <strong style="margin-right: 0.25rem;">Game Page</strong>
+                                </button>
+                            </a>
+                            
+                            <a href="https://github.com/sfremann/TimeTravelProject" style="text-decoration: none;" target="_blank">
+                                <button class="button is-github">
+                                    <i class="fab fa-2x fa-github"></i> <strong style="margin-right: 0.25rem;">Source Code</strong>
                                 </button>
                             </a>
                             
