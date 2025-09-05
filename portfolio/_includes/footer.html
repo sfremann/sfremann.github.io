@@ -1,0 +1,30 @@
+<!-- Contacts -->
+<section class="section" id="contact">
+  <div class="container">
+    <h1 class="title">Contact</h1>
+    <hr />
+    <nav class="level">
+      {% for item in site.author.contact %}
+      <div class="level-item has-text-centered">
+        <div>
+          <a href="{{ item.url | relative_url }}" class="icon is-large" target="_blank">
+            <i class="{{ item.icon_base }}"></i>
+          </a>
+          <p class="heading">{{ item.placeholder }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </nav>
+  </div>
+</section>
+
+<!-- Copyright -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p style="color: darkgrey; font-size: 12px;">
+      &copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}, powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap</a>.
+      <br />
+      Site last updated {{ "now" | date: '%Y-%m-%d' }}
+    </p>
+  </div>
+</footer>

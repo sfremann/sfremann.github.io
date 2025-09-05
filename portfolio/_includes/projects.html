@@ -1,0 +1,40 @@
+<section class="section" id="projects">
+    <div class="container">
+        <h1 class="title">Projects Highlights</h1>
+        <h2 class="subtitle">-> <a href="{{ "/projects.html#projectGallery" | relative_url }}">Gallery</a> for more</h2>
+        <hr/>
+        {% assign sorted_projects = site.starred_projects | sort: 'url' | reverse %}
+        {% for item in sorted_projects %}
+        <div class="card">
+            <div class="card-content">
+                <div class="media responsive-media">
+                    <div class="media-content">
+                        <p>{{ item.content | markdownify }}</p>
+                        <div class="tags">
+                            {% for tag in item.tags %}
+                            <span class="{{ tag.type }}">{{ tag.value }}</span>
+                            {% endfor %}
+                        </div>
+                        <br>
+                    </div>
+                    <div class="media-right is-width-caped">
+                        <figure class="image is-3by2">
+                            <img src="{{ item.thumbnail | relative_url }}">
+                        </figure>
+                        <br>
+                        <div class="project-links" style="text-align: center;">
+                            {% for link in item.links %}
+                            <a href="{{ link.url | relative_url }}" style="text-decoration: none;" target="_blank">
+                                <button class="{{ link.button_class }}">
+                                    <i class="{{ link.icon }}"></i> <strong style="margin-right: 0.25rem;">{{ link.description }}</strong>
+                                </button>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

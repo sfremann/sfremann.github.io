@@ -1,0 +1,17 @@
+<section class="section" id="about">
+  <div class="container">
+    <h1 class="title">About</h1>
+    <hr />
+    <div class="card">
+      <div class="card-content">
+        <br>
+        {% for item in site.about_details %}
+        <div style="margin-left: 20%; margin-right: 20%;">
+          <p>{{ item.content | markdownify }}</p>
+        </div>
+        <br>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

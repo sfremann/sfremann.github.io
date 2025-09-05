@@ -1,0 +1,28 @@
+<section class="section" id="experience">
+      <div class="container">
+        <h1 class="title">Experience</h1>
+        <hr />
+        {% assign sorted_jobs = site.jobs | sort: 'url' | reverse %}
+        {% for item in sorted_jobs %}
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="{{ item.logo | relative_url }}">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p>{{ item.content | markdownify }}</p>
+                        <div class="tags">
+                            {% for tag in item.tags %}
+                            <span class="{{ tag.type }}">{{ tag.value }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

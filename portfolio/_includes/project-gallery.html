@@ -1,0 +1,54 @@
+<section class="section" id="projectGallery">
+    <div class="container project-gallery">
+        <h1 class="title">Project Gallery</h1>
+        <hr/>
+
+        <!-- Search bar -->
+        <div class="container">
+            <div class="field has-addons">
+            <div class="control is-expanded">
+                <input class="input" type="text" id="searchBar" placeholder="Search Projects..." onkeyup="searchProjects()">
+            </div>
+            <br>
+            </div>
+            <div class="field">
+            <input class="input" type="text" id="tagSearchBar" placeholder="Filter by Tags..." onkeyup="filterByTags()">
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        {% assign sorted_projects = site.projects | sort: 'url' | reverse %}
+        {% for item in sorted_projects %}
+        <div class="card">
+            <div class="card-content">
+                <div class="media responsive-media">
+                    <div class="media-content">
+                        <p>{{ item.content | markdownify }}</p>
+                        <div class="tags">
+                            {% for tag in item.tags %}
+                            <span class="{{ tag.type }}">{{ tag.value }}</span>
+                            {% endfor %}
+                        </div>
+                        <br>
+                    </div>
+                    <div class="media-right is-width-caped">
+                        <figure class="image is-3by2">
+                            <img src="{{ item.thumbnail | relative_url }}">
+                        </figure>
+                        <br>
+                        <div class="project-links" style="text-align: center;">
+                            {% for link in item.links %}
+                            <a href="{{ link.url | relative_url }}" style="text-decoration: none;" target="_blank">
+                                <button class="{{ link.button_class }}">
+                                    <i class="{{ link.icon }}"></i> <strong style="margin-right: 0.25rem;">{{ link.description }}</strong>
+                                </button>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

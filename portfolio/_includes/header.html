@@ -1,0 +1,28 @@
+<section class="hero" id="home">
+    <div class="hero-body">
+        <div class="container-header">
+            <div class="level">
+                <div class="level-item has-text-leftalign">
+                    <figure class="image is-152x152">
+                        <img class="img is-rounded" src="{{ site.author.profile_picture | relative_url }}">
+                    </figure>
+                </div>
+            </div>
+            <div class="columns has-text-leftalign">
+                <div class="column">
+                    <h1>{{site.author.name}}</h1>
+                    <h2>{{site.author.position}}</h2>
+                    <div style="font-size: 14px; display: flex; flex-wrap: wrap; flex-direction: row; justify-items: center;">
+                        {% for item in site.author.contact %}
+                        <div>
+                            <a href="{{ item.url | relative_url }}" class="icon has-text-light" target="_blank">
+                                <i class="{{ item.icon_small }}"></i> <strong>{{ item.title }}</strong>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

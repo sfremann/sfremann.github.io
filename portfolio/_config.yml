@@ -1,0 +1,62 @@
+# Shared info
+title: Sarah Frémann Portfolio
+baseurl: /portfolio
+favicon: /assets/images/favicon/favicon.ico
+author:
+  name: Sarah Frémann
+  position: Developer | Programmer
+  profile_picture: /assets/images/profile.jpg
+  contact:
+  - title: sarah.fremann -at- gmail.com
+    url:
+    icon_small: fas fa-1x fa-envelope
+    icon_base: fas fa-2x fa-envelope
+    placeholder: sarah.fremann -at- gmail.com
+  - title: Resume
+    url: /assets/documents/Sarah_FREMANN_resume_latest.pdf
+    icon_small: fas fa-file-word
+    icon_base: fas fa-2x fa-file-word
+    placeholder: Resume
+  - title: LinkedIn
+    url: https://linkedin.com/in/sarah-fremann
+    icon_small: fab fa-1x fa-linkedin-in
+    icon_base: fab fa-2x fa-linkedin-in
+    placeholder: in/sarah-fremann
+  - title: GitHub
+    url: http://github.com/sfremann
+    icon_small: fab fa-1x fa-github
+    icon_base: fab fa-2x fa-github
+    placeholder: github.com/sfremann
+  - title: itch.io
+    url: https://sfremann.itch.io/
+    icon_small: fab fa-1x fa-itch-io
+    icon_base: fab fa-2x fa-itch-io
+    placeholder: sfremann.itch.io
+
+# Collections
+collections:
+  jobs:
+  projects:
+  courses:
+  # project_details:
+  #   output: true
+  about_details:
+  starred_projects:
+
+# Layouts and default variables
+defaults:
+  # - scope:
+  #     path: ""
+  #     type: "project_details"
+  #   values:
+  #     layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Files to exclude from _site
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"

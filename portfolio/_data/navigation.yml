@@ -1,0 +1,14 @@
+- name: Home
+  link: /#home
+- name: About
+  link: /#about
+- name: Project Highlights
+  link: /#projects
+- name: Project Gallery
+  link: /projects.html#projectGallery
+- name: Experience
+  link: /experience.html#experience
+- name: Education
+  link: /experience.html#education
+- name: Contact
+  link: /#contact
