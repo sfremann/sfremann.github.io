@@ -1,6 +1,7 @@
 # Shared info
 title: Sarah Frémann Portfolio
 baseurl: 
+source_repos: https://github.com/sfremann/sfremann.github.io
 favicon: /assets/images/favicon/favicon.ico
 author:
   name: Sarah Frémann
