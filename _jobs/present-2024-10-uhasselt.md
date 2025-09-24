@@ -15,7 +15,7 @@ tags:
       value: Blender
 ---
 
-# [Hasselt University](https://www.uhasselt.be/) - [Digital Future Lab](https://www.uhasselt.be/en/instituten-en/digitalfuturelab)
+# [Hasselt University](https://www.uhasselt.be/) - [Digital Future Lab](https://www.uhasselt.be/digitalfuturelab)
 
 ## Researcher in Applied Computer Science (focus on HCI, XR, CG)
 
