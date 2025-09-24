@@ -15,7 +15,7 @@ tags:
 thumbnail: /assets/images/thumbnails/digibuild.png
 links:
   - url: https://www.youtube.com/watch?v=CEKtPZjClpc
-    icon: fa fa-2x fa-youtube
+    icon: fa fa-2x fa-video
     button_class: button is-video
     description: Demo Video
   - url: https://coock.flandersmake.be/en/projects/digibuild
